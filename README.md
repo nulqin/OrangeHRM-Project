@@ -73,7 +73,7 @@ OrangeHRM - MiniProject/
 
 ## Test Output
 
-- Reports: Test results will be saved inside the reports/ folder.
+- Reports: Test results will be saved inside the test-results/.
 - Screenshots: Automatic screenshots will be captured for each step or upon test failure.
 
 
