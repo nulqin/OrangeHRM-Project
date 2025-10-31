@@ -1,0 +1,77 @@
+# 🧪 OrangeHRM Automation Project
+
+### BDD-based Web Automation Framework using **Playwright**, **Cucumber**, and **TypeScript**
+
+This project is a Behavior-Driven Development (BDD) web automation framework designed to test the **OrangeHRM** web application.  
+It combines the power of **Playwright** for fast and reliable browser automation and **Cucumber** for human-readable test scenarios.
+
+---
+
+## 🚀 Features
+
+- ✅ **BDD with Cucumber** – Write readable and maintainable Gherkin scenarios  
+- ⚡ **Playwright Integration** – Fast and stable browser automation  
+- 🧩 **Modular Structure** – Organized by features, pages, steps, and utilities  
+- 🧠 **Reusable Test Data Generator** – Dynamic input data, username, password etc.
+- 🧾 **HTML Test Reports** – Auto-generated after every test run  
+- 🔖 **Feature-based Execution** – Run tests by features.
+
+---
+
+## 📁 Project Structure
+
+OrangeHRM - MiniProject/
+├── src/
+│   ├── pages/
+│   │   ├── auth/
+│   │   │   ├── LoginPage.ts
+│   │   │   └── ForgotPasswordPage.ts
+│   │   └── admin/
+│   │       ├── UserManagementPage.ts
+│   │       ├── JobTitlesPage.ts
+│   │       ├── PayGradesPage.ts
+│   │       ├── EmploymentStatusPage.ts
+│   │       ├── JobCategoriesPage.ts
+│   │       └── WorkShiftsPage.ts
+│   ├── steps/
+│   │   ├── auth/
+│   │   │   ├── loginSteps.ts
+│   │   │   └── forgotPasswordSteps.ts
+│   │   └── admin/
+│   │       ├── userManagementSteps.ts
+│   │       ├── jobTitlesSteps.ts
+│   │       ├── payGradesSteps.ts
+│   │       ├── employmentStatusSteps.ts
+│   │       ├── jobCategoriesSteps.ts
+│   │       └── workShiftsSteps.ts
+│   ├── hooks/
+│   │   └── hooks.ts
+│   └── utils/
+│       ├── browser.ts
+│       └── testData.ts
+├── features/
+│   ├── auth/
+│   │   ├── login.feature
+│   │   └── forgotPassword.feature
+│   └── admin/
+│       ├── userManagement.feature
+│       ├── jobTitles.feature
+│       ├── payGrades.feature
+│       ├── employmentStatus.feature
+│       ├── jobCategories.feature
+│       └── workShifts.feature
+├── test-results/
+├── cucumber.js
+├── tsconfig.json
+├── package.json
+└── .env
+
+## Test Output
+
+- Reports: Test results will be saved inside the reports/ folder.
+- Screenshots: Automatic screenshots will be captured for each step or upon test failure.
+
+
+## License
+
+This project is free to use for educational purposes.

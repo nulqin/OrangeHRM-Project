@@ -1,0 +1,34 @@
+{
+  "name": "orangehrm---miniproject",
+  "version": "1.0.0",
+  "description": "OrangeHRM Automation Testing Framework",
+  "scripts": {
+    "_comment_all": "Run By All",
+    "test": "cucumber-js",
+    "test:all": "cucumber-js features/**/*.feature --format html:test-results/all-report.html",
+
+    "_comment_module": "Run By Module",
+    "test:auth": "cucumber-js features/auth/*.feature --format html:test-results/auth-report.html",
+    "test:admin": "cucumber-js features/admin/*.feature --format html:test-results/admin-report.html",
+
+    "_comment_features": "Run By Features",
+    "test:login": "cucumber-js features/auth/login.feature --format html:test-results/Auth-Login-report.html",
+    "test:forgot": "cucumber-js features/auth/forgotPassword.feature --format html:test-results/Auth-forgotPassword-report.html",
+    "test:admin:userManagement": "cucumber-js features/admin/userManagement.feature --format html:test-results/Admin-userManagement-report.html",
+    "test:admin:jobTitles": "cucumber-js features/admin/jobTitles.feature --format html:test-results/Admin-jobTitles-report.html",
+    "test:admin:payGrades": "cucumber-js features/admin/payGrades.feature --format html:test-results/Admin-payGrades.html",
+    "test:admin:employmentStatus": "cucumber-js features/admin/employmentStatus.feature --format html:test-results/Admin-employmentStatus.html",
+    "test:admin:jobCategories": "cucumber-js features/admin/jobCategories.feature --format html:test-results/Admin-jobCategories.html",
+    "test:admin:workShifts": "cucumber-js features/admin/workShifts.feature --format html:test-results/Admin-workShifts.html"
+    
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "@playwright/test": "^1.40.0",
+    "playwright": "^1.40.0",
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.10.0",
+    "dotenv": "^16.3.0"
+  }
+}
